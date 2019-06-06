@@ -1,0 +1,71 @@
+[
+  {
+    "text": "0: story element",
+    "choices": [
+      {
+        "text": "go to 1",
+        "outcomes": [
+          {
+            "goTo": 1,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "1: story element ",
+    "choices": [
+      {
+        "text": "go to 2",
+        "outcomes": [
+          {
+            "goTo": 2,
+            "probability": 0.6
+          },
+          {
+            "goTo": 3,
+            "probability": 0.4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "2: story element",
+    "choices": [
+      {
+        "text": "go to 0",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "3: random encounter",
+    "choices": [
+      {
+        "text": "go to 1",
+        "outcomes": [
+          {
+            "goTo": 1,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "go to 0",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  }
+]
