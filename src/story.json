@@ -1,12 +1,30 @@
 [
   {
-    "text": "0: story element",
+    "text": "Budzisz się w nieznanym Ci pokoju, w wykrochmalonej pościeli. Otaczają Cię szafki pokryte różnej maści bibelotami. Słyszysz skrzypienie drewnianej podłogi i uświadamiasz sobie ze to kroki! Ktoś się zbliża... ",
     "choices": [
       {
-        "text": "go to 1",
+        "text": "jesteś przestraszony ,chowasz sie do szafy w akcie paniki",
         "outcomes": [
           {
             "goTo": 1,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "czekasz spokojnie na przybysza, ktoś musi powiedzieć Ci jak się tu znalazłeś",
+        "outcomes": [
+          {
+            "goTo": 2,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": " przeczuwasz zagrożenie, bierzesz pierwszy lepszy bibelot ,chowasz się za drzwiami by zaatakować wchodzącego  ",
+        "outcomes": [
+          {
+            "goTo": 3,
             "probability": 1
           }
         ]
@@ -14,28 +32,294 @@
     ]
   },
   {
-    "text": "1: story element ",
+    "text": "siedzisz w szafie z wszystkich stron dotykają Cię futra (na pewno prawdziwe sądząc po zapachu i leżącej obok głowie lisa) słyszysz glos, jakby starszej pani wołający twoje imię : ",
     "choices": [
       {
-        "text": "go to 2",
+        "text": " Wychodzisz z szafy ponieważ głos który cię wolał to starsza Pani",
         "outcomes": [
           {
             "goTo": 2,
-            "probability": 0.6
-          },
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Uparcie siedzisz w szafie, nie ma co się wychylać ",
+        "outcomes": [
           {
-            "goTo": 3,
-            "probability": 0.4
+            "goTo": 4,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Czekasz aż staruszka podejdzie bliżej i uderzasz ją drzwiami",
+        "outcomes": [
+          {
+            "goTo": 5,
+            "probability": 1
           }
         ]
       }
     ]
   },
   {
-    "text": "2: story element",
+    "text": "2B. Ku twojemu zdziwieniu do pokoju wchodzi starsza pani z tacą wypełnioną jedzeniem i zachęca Cię do jedzenia . Nie odpowiada na żadne twoje pytanie twierdząc że jak człowiek glodny to i tak nic nie rozumie ",
     "choices": [
       {
-        "text": "go to 0",
+        "text": "Jesz z apetytem w końcu jesteś głodny",
+        "outcomes": [
+          {
+            "goTo": 11,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Dziękujesz i kłamiesz ze nie jesteś głodny (boisz sie ze jedzenie jest zatrute)  ",
+        "outcomes": [
+          {
+            "goTo": 6,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Oblewasz staruszkę gorąca herbatą ,bo źle jej z oczu patrzy ",
+        "outcomes": [
+          {
+            "goTo": 7,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "2C. Zaatakowałeś właśnie.....staruszkę..niosącą dla Ciebie śniadanie! Starsza Pani leży na ziemi i coś burczy pod nosem (znaczy to że chyba zyje)  ",
+    "choices": [
+      {
+        "text": "Nie takiego przeciwnika sie spodziewałeś , pomagasz pani wstać  ",
+        "outcomes": [
+          {
+            "goTo": 8,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Nie interesuje Cię kogo uderzyłeś ,ważne że możesz wyjść, idziesz  ",
+        "outcomes": [
+          {
+            "goTo": 9,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Związujesz staruszkę ,chcesz wycisnąć z niej informacje ",
+        "outcomes": [
+          {
+            "goTo": 10,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": " W szafie zaczyna robić się gorąco ,ale postanowiłeś się wciąż ukrywać .To nie była dobra dobra decyzja! Kto szuka schronienia w szafie sam wpędziełeś się w pułapkę. Mdlejesz ! Budzisz się zwiazany i cuchnącym pokoju! ",
+    "choices": [
+      {
+        "text": "Krzyczysz w nadziei że ktoś cię znajdzie",
+        "outcomes": [
+          {
+            "goTo": 12,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Kombinujesz ,próbujesz przegryźć więzy ",
+        "outcomes": [
+          {
+            "goTo": 13,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "2AC. Uderzyłeś staruszkę drzwiami od szafy ! Nie jesteś miłą osobą !! Starsza Pani chyba umarła....nie rusza się  ",
+    "choices": [
+      {
+        "text": "Sprawdzam czy na pewno umarła , nie chciałem nikogo zabić !! ",
+        "outcomes": [
+          {
+            "goTo": 14,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Chowam ciało do szafy i przykrywam futrami, wychodzę  ",
+        "outcomes": [
+          {
+            "goTo": 9,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Wychodzę ,staram się zadzwonić na pogotowie  ",
+        "outcomes": [
+          {
+            "goTo": 15,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "2BB. Starsza Pani bardzo posmutniała, i wybucha płaczem ,lamentuje ,i powoli zaczyna stawać się agresywna  ",
+    "choices": [
+      {
+        "text": "Mówisz że zjesz mięso ,ale ziemniaki zostawisz ",
+        "outcomes": [
+          {
+            "goTo": 16,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Uspakajasz starszą Panią ,tłumaczysz że jesteś uczulony na.... wszystko co akurat przyniosła",
+        "outcomes": [
+          {
+            "goTo": 17,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Nie robisz nic ,niech sobie krzyczy ,kiedyś przestanie",
+        "outcomes": [
+          {
+            "goTo": 18,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "2BC. 7 Serio??? Oblałeś staruszkę gorącą herbatą ? Nie pochwalamy ! Ale chwila ...ona wcale nie poczuła. Za to jej twarz dziwnie wygląda , zaczyna się rozklejać. To nie starsza PAni a ucharakteryzowany mężczyzna. Atakuje Cię",
+    "choices": [
+      {
+        "text": "Walczę z nim wręcz",
+        "outcomes": [
+          {
+            "goTo": 19,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Sięgam po aniołka z półki i rozbijam mu na głowie",
+        "outcomes": [
+          {
+            "goTo": 20,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Robie unik i wybiegam",
+        "outcomes": [
+          {
+            "goTo": 21,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "2CA.8 Oj  nie spodobało się to starszej Pani ,ale daje się podnieść i zgadza się z Tobą porozmawiać tłumaczy ,że jesteś teraz jej wnuczkiem ,bo zawsze chciała mieć.",
+    "choices": [
+      {
+        "text": "Utrzymujesz jej wersję, żeby dowiedzieć się więcej ",
+        "outcomes": [
+          {
+            "goTo": 22,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Atakujesz ją ! To jakaś wariatka ,która Cię więzi ",
+        "outcomes": [
+          {
+            "goTo": 23,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "2CB.9 Idziesz przez stary dom ,w którym jest dość strasznie ,szukasz wyjścia ,ale ponieważ duży dom nie możesz go znaleźć .Słyszysz jakieś głosy dobiegające z pokoju obok któego przechodzisz",
+    "choices": [
+      {
+        "text": "jesteś skupiony na celu się szukasz dalej wyjscia",
+        "outcomes": [
+          {
+            "goTo": 24,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Idziesz tam gdzie głosy i podsłuchujesz rozmowę",
+        "outcomes": [
+          {
+            "goTo": 25,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "2CC10. Staruszka związana ,na krześle posadzona ,ale mówić nie chce ",
+    "choices": [
+      {
+        "text": "Zmuszasz ją groźbami ",
+        "outcomes": [
+          {
+            "goTo": 26,
+            "probability": 1
+          }
+        ]
+      },
+      {
+        "text": "Zostawiasz w pokoju i wychodzisz",
+        "outcomes": [
+          {
+            "goTo": 26,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "2BA5 Jedzenie było zatrute , umarłeś. Przykro nam ,łakomstwo to grzech 🙁",
+    "choices": [
+      {
+        "text": "REPLAY",
         "outcomes": [
           {
             "goTo": 0,
@@ -46,19 +330,206 @@
     ]
   },
   {
-    "text": "3: random encounter",
+    "text": "3A .Nie dość ,że schowałęś się w szafie to drzesz się jak opętany!!! Przychodzi jakiś groźny typ i Cię zabija",
     "choices": [
       {
-        "text": "go to 1",
+        "text": "REPLAY",
         "outcomes": [
           {
-            "goTo": 1,
+            "goTo": 0,
             "probability": 1
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "text": "3B. Chcesz rozgryźć łańcuch!?? Widzisz ,że w pokoju jest kamera.... Ktoś wchodzi do pokoju. Umięśniony wytatuowany gostek , najwidoczniej uznał Cię za delikatnie mówiąc głupiego , bo brzęczy pod nosem ,że takiego kolejnego im nie trzeba. Ładują Cię do samochodu i wysadzają po twoim domem , a Ty już nigdy nie dowiesz się o co chodziło. Ale jesteś wolny !",
+    "choices": [
       {
-        "text": "go to 0",
+        "text": "REPLAY",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "4A. Definitywnie umarła! Dręczony wyrzutami sumienia ,zaczynasz zajadać problem. Zatrutym jedzeniem …. Upsii Umierasz! ",
+    "choices": [
+      {
+        "text": "REPLAY",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "4C. Cały czas miałeś przy sobie telefon!!! Działający ,i dopiero teraz zechciałeś go użyć? Brawo ! Dobrze ,ze głupi ma szczęscie , pogotowie przyjeżdża , razem z poturbowaną Panią zabierają Cię do domu . Będziesz włuczył się po sądach za poturbowanie staruszki ,ale żyjesz !!!",
+    "choices": [
+      {
+        "text": "REPLAY",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "6A. Oooo tak to odpowiedź najlepsza z możliwych ! Starsza Pani , a właściwie gostek za nią przebrany opowiada Ci ,że właśnie zdałęś test na agenta specjalnej jednostki ,kórym może zostać tylko ktoś bardzo silny psychicznie!!! Witaj agencie",
+    "choices": [
+      {
+        "text": "REPLAY",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "6B. Oooodość dobra odpowiedź  ! Starsza Pani , a właściwie gostek za nią przebrany opowiada Ci ,że właśnie zdałęś test na agenta specjalnej jednostki ,którym może zostać tylko ktoś bardzo silny psychicznie, choć z uwagi na twoją kłamliwość ...zostajesz przydzielony do sekcji agentów dyplomatów!!! ",
+    "choices": [
+      {
+        "text": "REPLAY",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "6C. Starsza Pani nie lubi być ignorowana....denerwuje się ! Po chwili Wbija Ci w nogę strzykawkę! (nie pytaj skąd ją miała) Budzisz się we własnym łóżku i już nigdy nie dowiesz się o co chodziło! ",
+    "choices": [
+      {
+        "text": "REPLAY",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "7A. Jesteś bardzo dobry w walce wręcz !! Wygrywasz ,wybiegasz z pokoju a tam komisja opowiada Ci ,że właśnie zdałęś test na agenta specjalnej jednostki ,którym może zostać tylko ktoś bardzo silny psychicznie!!! Witaj agencie!!",
+    "choices": [
+      {
+        "text": "REPLAY",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "7B. KAleczysz się szkłem z rozbitego aniołka ,krwawisz, nagle zbiegają się ludzie w graniakach wszyscy próbują Ci pomóc .Niestety umierasz.",
+    "choices": [
+      {
+        "text": "REPLAY",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "7C. W bieganiu nie jesteś akurat zbyt dobry ,przewracasz się i umierasz!",
+    "choices": [
+      {
+        "text": "REPLAY",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "8A Oooodość dobra odpowiedź  ! Starsza Pani , a właściwie gostek za nią przebrany opowiada Ci ,że właśnie zdałeś test na agenta specjalnej jednostki ,którym może zostać tylko ktoś bardzo silny psychicznie, choć z uwagi na twoją kłamliwość ...zostajesz przydzielony do sekcji agentów dyplomatów!!!",
+    "choices": [
+      {
+        "text": "REPLAY",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "8B. Ponieważ nic nie jadłeś i jesteś osłabiony w wyniku nagłego wysiłku mdlejesz. Budzisz się we własnym pokoju i już nigdy nie dowiesz się co zaszło. ",
+    "choices": [
+      {
+        "text": "REPLAY",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "9A. Udałoo się wyszedłeś , jesteś wolny ",
+    "choices": [
+      {
+        "text": "REPLAY",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "9B. Nie ładnie podsłuchiwać ,jednak to robisz ,bardzo skupiony na głosach nie jesteś ostrożny. Drzwi gwałtownie się otwierają Ty popchnięty nimi spadasz ze schodów i umierasz!",
+    "choices": [
+      {
+        "text": "REPLAY",
+        "outcomes": [
+          {
+            "goTo": 0,
+            "probability": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "10A, 10B. Za dzrzwiami grupa ludzi w garniturach  tłumaczy Ci że właśnie zdałeś test na agenta specjalnej jednostki ,którym może zostać tylko ktoś bardzo silny psychicznie, z uwagi na twoje wypracowane techniki przesłuchań i spryt jesteś agentem od zadań specjalnych! Witaj agencie!!",
+    "choices": [
+      {
+        "text": "REPLAY",
         "outcomes": [
           {
             "goTo": 0,
